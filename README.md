@@ -9,7 +9,7 @@ Live at: https://kristiinamartin.github.io/businesscard/
 - `index.html`: the card page (all text and styling are in this one file)
 - `kristiina-martin.vcf`: the contact file behind the "Save contact" button
 - `qr.png` / `qr.svg`: QR code that opens the page. Use the SVG for print, the PNG for slides and email signatures
-- `fonts/`: Bricolage Grotesque and Source Serif 4, hosted here so no visitor data goes to a font service
+- `fonts/`: Titillium Web (the typeface named in the EIT Community web design guidelines), hosted here so no visitor data goes to a font service
 
 ## Publishing
 

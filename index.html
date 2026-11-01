@@ -8,18 +8,25 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#2A44C8">
   <meta name="color-scheme" content="light">
-  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/titillium-web-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/titillium-web-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <style>
     @font-face {
-      font-family: "Bricolage Grotesque";
-      src: url("fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
-      font-weight: 200 800;
+      font-family: "Titillium Web";
+      src: url("fonts/titillium-web-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
       font-display: swap;
     }
     @font-face {
-      font-family: "Source Serif 4";
-      src: url("fonts/source-serif-4-latin-wght-normal.woff2") format("woff2");
-      font-weight: 200 900;
+      font-family: "Titillium Web";
+      src: url("fonts/titillium-web-latin-600-normal.woff2") format("woff2");
+      font-weight: 600;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Titillium Web";
+      src: url("fonts/titillium-web-latin-700-normal.woff2") format("woff2");
+      font-weight: 700;
       font-display: swap;
     }
 
@@ -30,8 +37,7 @@
       --paper: #EEF1F3;
       --mist: #D0D8DE;
       --white: #FFFFFF;
-      --display: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --font: "Titillium Web", system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
@@ -44,9 +50,9 @@
       min-height: 100dvh;
       background: var(--paper);
       color: var(--ink);
-      font-family: var(--text);
-      font-size: 1.125rem;
-      line-height: 1.5;
+      font-family: var(--font);
+      font-size: 1.25rem;
+      line-height: 1.45;
     }
 
     .card {
@@ -72,27 +78,27 @@
       background: var(--cobalt);
       color: var(--white);
       border-radius: 6px;
-      font-family: var(--display);
+      font-family: var(--font);
       font-weight: 700;
-      font-size: 3.4rem;
+      font-size: 3.7rem;
       line-height: 1;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.02em;
       user-select: none;
     }
 
     h1 {
       margin: 0;
-      font-family: var(--display);
-      font-weight: 700;
-      font-size: clamp(2rem, 9vw, 2.6rem);
-      line-height: 1.02;
-      letter-spacing: -0.025em;
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: clamp(2.2rem, 10vw, 2.9rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
     }
 
     .role {
       margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      line-height: 1.25;
+      font-size: 1.4rem;
+      line-height: 1.2;
     }
 
     /* Save contact */
@@ -103,9 +109,9 @@
       background: var(--cobalt);
       color: var(--white);
       border-radius: 6px;
-      font-family: var(--display);
+      font-family: var(--font);
       font-weight: 600;
-      font-size: 1.15rem;
+      font-size: 1.3rem;
       text-align: center;
       text-decoration: none;
       transition: background-color 0.15s;
@@ -118,11 +124,10 @@
 
     h2 {
       margin: 0 0 0.75rem;
-      font-family: var(--display);
+      font-family: var(--font);
       font-weight: 600;
-      font-size: 1.3rem;
+      font-size: 1.45rem;
       line-height: 1.2;
-      letter-spacing: -0.01em;
     }
 
     .details {
