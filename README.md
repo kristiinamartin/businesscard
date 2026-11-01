@@ -1,6 +1,6 @@
 # Virtual business card
 
-Contact page for Kristiina Martin, Project Officer at EIT RawMaterials GmbH.
+Contact page for Kristiina Martin, Project Officer, Circular Economy, at EIT RawMaterials GmbH.
 
 Live at: https://kristiinamartin.github.io/businesscard/
 
