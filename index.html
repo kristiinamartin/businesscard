@@ -23,12 +23,6 @@
       font-weight: 600;
       font-display: swap;
     }
-    @font-face {
-      font-family: "Titillium Web";
-      src: url("fonts/titillium-web-latin-700-normal.woff2") format("woff2");
-      font-weight: 700;
-      font-display: swap;
-    }
 
     :root {
       --cobalt: #2A44C8;
@@ -62,35 +56,11 @@
     }
 
     /* Identity */
-    .identity {
-      display: flex;
-      align-items: flex-end;
-      gap: 1.25rem;
-    }
-
-    .tile {
-      flex: none;
-      width: 6.5rem;
-      aspect-ratio: 1;
-      display: flex;
-      align-items: flex-end;
-      padding: 0.5rem 0.65rem;
-      background: var(--cobalt);
-      color: var(--white);
-      border-radius: 6px;
-      font-family: var(--font);
-      font-weight: 700;
-      font-size: 3.7rem;
-      line-height: 1;
-      letter-spacing: -0.02em;
-      user-select: none;
-    }
-
     h1 {
       margin: 0;
       font-family: var(--font);
       font-weight: 600;
-      font-size: clamp(2.2rem, 10vw, 2.9rem);
+      font-size: clamp(2.4rem, 11vw, 3.1rem);
       line-height: 1.05;
       letter-spacing: -0.01em;
     }
@@ -202,12 +172,9 @@
 </head>
 <body>
   <main class="card">
-    <header class="identity">
-      <div class="tile" aria-hidden="true">Km</div>
-      <div>
-        <h1>Kristiina Martin</h1>
-        <p class="role">Project Officer</p>
-      </div>
+    <header>
+      <h1>Kristiina Martin</h1>
+      <p class="role">Project Officer</p>
     </header>
 
     <a class="save" href="kristiina-martin.vcf" download="kristiina-martin.vcf">Save contact</a>
