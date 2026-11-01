@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kristiina Martin, EIT RawMaterials</title>
+  <meta name="description" content="Contact details for Kristiina Martin, Project Officer at EIT RawMaterials GmbH in Berlin.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#2A44C8">
+  <meta name="color-scheme" content="light">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Bricolage Grotesque";
+      src: url("fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
+      font-weight: 200 800;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Source Serif 4";
+      src: url("fonts/source-serif-4-latin-wght-normal.woff2") format("woff2");
+      font-weight: 200 900;
+      font-display: swap;
+    }
+
+    :root {
+      --cobalt: #2A44C8;
+      --cobalt-deep: #1F349C;
+      --ink: #101A24;
+      --paper: #EEF1F3;
+      --mist: #D0D8DE;
+      --white: #FFFFFF;
+      --display: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--text);
+      font-size: 1.125rem;
+      line-height: 1.5;
+    }
+
+    .card {
+      max-width: 30rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    /* Identity */
+    .identity {
+      display: flex;
+      align-items: flex-end;
+      gap: 1.25rem;
+    }
+
+    .tile {
+      flex: none;
+      width: 6.5rem;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 0.5rem 0.65rem;
+      background: var(--cobalt);
+      color: var(--white);
+      border-radius: 6px;
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 3.4rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      user-select: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(2rem, 9vw, 2.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+    }
+
+    .role {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+
+    /* Save contact */
+    .save {
+      display: block;
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      background: var(--cobalt);
+      color: var(--white);
+      border-radius: 6px;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.15rem;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.15s;
+    }
+    .save:hover { background: var(--cobalt-deep); }
+    .save:active { background: var(--ink); }
+
+    /* Work details */
+    .work { margin-top: 2.5rem; }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.3rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .details {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .details li { border-top: 1px solid var(--mist); }
+    .details li:last-child { border-bottom: 1px solid var(--mist); }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1.5rem 1fr;
+      column-gap: 1rem;
+      align-items: start;
+      padding: 1rem 0;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .row svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 0.15rem;
+      fill: none;
+      stroke: var(--cobalt);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .row span {
+      font-variant-numeric: lining-nums;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+      transition: text-decoration-color 0.15s;
+    }
+    .row:hover span { text-decoration-color: var(--cobalt); }
+
+    .row .address { display: block; text-decoration: none; }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--cobalt);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .save:focus-visible { outline-color: var(--ink); }
+
+    @media (min-width: 40rem) {
+      .card { padding-top: 5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="identity">
+      <div class="tile" aria-hidden="true">Km</div>
+      <div>
+        <h1>Kristiina Martin</h1>
+        <p class="role">Project Officer</p>
+      </div>
+    </header>
+
+    <a class="save" href="kristiina-martin.vcf" download="kristiina-martin.vcf">Save contact</a>
+
+    <section class="work" aria-labelledby="employer">
+      <h2 id="employer">EIT RawMaterials GmbH</h2>
+      <ul class="details">
+        <li>
+          <a class="row" href="tel:+4915205197089">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.2l1.6 4.2-2 1.3a11 11 0 0 0 5.7 5.7l1.3-2 4.2 1.6V18a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <span><span class="visually-hidden">Phone: </span>+49 152 05197089</span>
+          </a>
+        </li>
+        <li>
+          <a class="row" href="mailto:kristiina.martin@eitrawmaterials.eu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+            <span><span class="visually-hidden">Email: </span>kristiina.martin@<wbr>eitrawmaterials.eu</span>
+          </a>
+        </li>
+        <li>
+          <a class="row" href="https://eitrawmaterials.eu" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+            <span><span class="visually-hidden">Website: </span>eitrawmaterials.eu</span>
+          </a>
+        </li>
+        <li>
+          <a class="row" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47a851de374310e3:0xaded40f46db4307a?sa=X&amp;ved=1t:8290&amp;ictx=111" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span><span class="visually-hidden">Office: </span><span class="address">Bei Regus<br>Knesebeckstraße 62-63<br>10719 Berlin</span></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

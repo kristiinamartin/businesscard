@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Martin;Kristiina;;;
+FN:Kristiina Martin
+ORG:EIT RawMaterials GmbH
+TITLE:Project Officer
+TEL;TYPE=WORK,VOICE:+4915205197089
+EMAIL;TYPE=WORK,INTERNET:kristiina.martin@eitrawmaterials.eu
+URL;TYPE=WORK:https://eitrawmaterials.eu
+ADR;TYPE=WORK:;;c/o Regus\, Knesebeckstraße 62-63;Berlin;;10719;Germany
+END:VCARD
